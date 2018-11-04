@@ -25,13 +25,24 @@
     </header>
 
     <div class="jumbotron">
+
         <h1 class="title">Contact</h1>
         <hr>
-        <form action="/action_page.php">
-            Name<br> <input type="text" name="Name" value="John Smith"><br>
-            Email<br> <input type="email" name="Email" value="example@gmail.com"><br>
-            Message<br> <input type="text" name="Message"><br><br>
-            <input type="submit" value="Submit">
+
+        <form class="my-form">
+            <div class="form-group">
+                <label>Name: </label>
+                <input type="text" name="name">
+            </div>
+            <div class="form-group">
+                <label>Email: </label>
+                <input type="text" name="email">
+            </div>
+            <div class="form-group">
+                <label>Message: </label>
+                <textarea name="message" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" class="button" value="Submit" name="">
         </form>
     </div>
 
