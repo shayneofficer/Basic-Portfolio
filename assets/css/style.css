@@ -1,13 +1,16 @@
-/*
+/* To Fix:
+    - Put the name box on the same line as nav buttons in header
+        - namebox display inline makes the background shrink to like 10px wide
 
-2. Fonts:
-   * For heading fonts use `font-family: 'Georgia', Times, Times New Roman, serif;`.
-   * For all other fonts use `'Arial', 'Helvetica Neue', Helvetica, sans-serif;`.
+    - Make namebox have the full height of the header
+    - Make the footer go to the bottom of the document, not the viewport
+    - Position images in portfolio page
+    - Give images labels and make them links
+    
 
-6. Dimensions:
-   * The entire content and the main section content area is `960px` wide.
-   * Pro-tip: Use the [Page Ruler](https://chrome.google.com/webstore/detail/page-ruler/jlpkojjdgbllmedoapgfodplfhcbnbpn/related?hl=en) extension to measure the size of elements. */
-
+    - Uncertain of whether the elements are in proper order, or whether styling on one is messing up others, etc.
+    - There's probably a better use of classes (more re-using, DRY)
+ */
 
 /* Background pattern from Toptal Subtle Patterns */
 * {
@@ -23,11 +26,12 @@ body {
 header {
     background-color: #ffffff;
     border-bottom: 1px solid #cccccc;
+    height: 75.5px;
 }
 
 .navbar {
     width: 960px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .name-box {
@@ -36,6 +40,7 @@ header {
     color: #ffffff;
     padding: 20px;
     width: 250px;
+    float: left;
 }
 
 ul {
@@ -43,6 +48,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: relative;
+    top: 21px;
 }
 
 li {
