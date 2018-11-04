@@ -1,8 +1,8 @@
 /* To Fix:
     - Put the name box on the same line as nav buttons in header
-        - namebox display inline makes the background shrink to like 10px wide
-
-    - Make namebox have the full height of the header
+        - Floating left and changing header height worked. Good solution?
+        - Gave nav links relative position and pushed down half the height of the header. Good?
+    
     - Make the footer go to the bottom of the document, not the viewport
     - Position images in portfolio page
     - Give images labels and make them links
@@ -124,4 +124,13 @@ footer {
 .my-form input[type="text"], .my-form textarea {
     padding: 8px;
     width: 100%;
+}
+
+.project-links{
+    display: inline;
+}
+
+.project-links img {
+    width: 300px;
+    margin: 10px 20px 20px 0px;
 }
