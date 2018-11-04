@@ -10,17 +10,19 @@
 
 
 /* Background pattern from Toptal Subtle Patterns */
-body {
-    background-image: url(../images/congruent_outline.png)
+* {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    background-image: url(../images/congruent_outline.png);
+    margin: 0;
 }
 
 header {
     background-color: #ffffff;
     border-bottom: 1px solid #cccccc;
-    padding: 10px;
-    /* position: relative;
-    width: 100%; */
 }
 
 .navbar {
@@ -28,22 +30,12 @@ header {
     margin: 0 auto;
 }
 
-.jumbotron {
-    width: 960px;
-    margin: 0 auto;
-    border: 1px solid #dddddd;
-    background-color: #ffffff;
-    box-sizing: border-box;
-    /* clear: both; */
-}
-
-p {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777777;
-}
-
-.title {
-    color: #4aaaa5;
+.name-box {
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #ffffff;
+    padding: 20px;
+    width: 250px;
 }
 
 ul {
@@ -55,27 +47,49 @@ ul {
 
 li {
     float: right;
-    display: block;
+    /* display: block; */
     padding: 8px;
     background-color: #dddddd;
 }
 
-.name-box {
-    background-color: #4aaaa5;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    color: #ffffff;
-    position: relative;
-    left: 30px;
-    bottom: 0px;
-    padding: 5px;
-    border-radius: .5rem;
-    width: 243px;
-    /* display: inline; */
+.jumbotron {
+    width: 960px;
+    margin: 30px auto;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+hr {
+    color: #dddddd;
+    margin: 20px 0px 20px 0px;
+    font-weight: bolder;
+}
+
+p {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+.title {
+    color: #4aaaa5;
 }
 
 footer {
     background-color: #666666; 
     text-align: center;
     color: #777777;
-    border-top: 5px solid #4aaaa5
+    border-top: 5px solid #4aaaa5;
+    padding-top: 30px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+[type=submit] {
+    background-color: #4aaaa5;
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
 }

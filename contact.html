@@ -17,9 +17,9 @@
                 <h1>Shayne Officer</h1>
             </div>
             <ul>
-                <li>About</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./index.html">About</a></li>
             </ul>
         </div>
     </header>
@@ -27,13 +27,12 @@
     <div class="jumbotron">
         <h1 class="title">Contact</h1>
         <hr>
-        <h3>Name</h3>
-        <h3>Email</h3>
-        <h3>Message</h3>
-
-        <button>
-            Submit
-        </button>
+        <form action="/action_page.php">
+            Name<br> <input type="text" name="Name" value="John Smith"><br>
+            Email<br> <input type="email" name="Email" value="example@gmail.com"><br>
+            Message<br> <input type="text" name="Message"><br><br>
+            <input type="submit" value="Submit">
+        </form>
     </div>
 
     <footer>
@@ -42,3 +41,5 @@
 </body>
 
 </html>
+
+<!-- <textarea rows="4" cols="50" name="comment" form="usrform"></textarea> -->
