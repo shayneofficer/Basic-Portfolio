@@ -49,7 +49,13 @@ li {
     float: right;
     /* display: block; */
     padding: 8px;
-    background-color: #dddddd;
+    /* background-color: #ffffff; */
+}
+
+li a {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    text-decoration: none;
 }
 
 .jumbotron {
@@ -89,13 +95,14 @@ footer {
 
 [type=submit] {
     background-color: #4aaaa5;
-    padding: 5px 10px;
+    padding: 5px 15px;
     color: #fff;
     border: none;
 }
 
 .my-form {
-    /* padding: 20px; */
+    color: #777777;
+    margin-right: 20px;
 }
 
 .my-form .form-group {
@@ -104,6 +111,7 @@ footer {
 
 .my-form label {
     display: block;
+    padding-bottom: 5px;
 }
 
 .my-form input[type="text"], .my-form textarea {
