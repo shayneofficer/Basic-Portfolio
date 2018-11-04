@@ -2,14 +2,23 @@
     - Put the name box on the same line as nav buttons in header
         - Floating left and changing header height worked. Good solution?
         - Gave nav links relative position and pushed down half the height of the header. Good?
-    
+
     - Make the footer go to the bottom of the document, not the viewport
+        - Changed to position: fixed so at least it stays at the bottom, but I'd rather have it at the bottom of the page even when the viewport doesn't contain it.
+    
+    - Put paragraphs next to the profile picture in the about me page.
+        - Making the img display inline only moves the paragraph up one line. No idea why.
+        - Floated the image to the left and it seemed to do the trick. Good solution?
+     
     - Position images in portfolio page
+        - Made the divs containing them display inline, then resized the images. Making the images themselves display inline precludes resizing. Why?
     - Give images labels and make them links
     
 
     - Uncertain of whether the elements are in proper order, or whether styling on one is messing up others, etc.
     - There's probably a better use of classes (more re-using, DRY)
+
+    - It seems like each html page is horizontally shifted by a few pixels, makes switching between them look weird. Not sure what's causing it.
  */
 
 /* Background pattern from Toptal Subtle Patterns */
@@ -83,6 +92,8 @@ hr {
 p {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
+    font-size: 16px;
+    line-height: 30px; 
 }
 
 .title {
@@ -95,7 +106,7 @@ footer {
     color: #777777;
     border-top: 5px solid #4aaaa5;
     padding-top: 30px;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     width: 100%;
 }
@@ -133,4 +144,10 @@ footer {
 .project-links img {
     width: 300px;
     margin: 10px 20px 20px 0px;
+}
+
+#profile-picture {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
