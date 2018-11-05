@@ -130,6 +130,7 @@ footer {
 .my-form label {
     display: block;
     padding-bottom: 5px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .my-form input[type="text"], .my-form textarea {
